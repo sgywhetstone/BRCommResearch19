@@ -40,8 +40,8 @@ GenK2 := List(GeneratorsOfGroup(K2));;
 #remaining elements may be permuted in any way.
 
 #Find the A^p elements in each list
-x := Genf[1]^2;
-y := Genf[1]^(3);
+x := Genf[1]^m;
+y := Genf[1]^n;
 if x in GenK1 then 
 	xloc := Position(GenK1, x);
 elif x^-1 in GenK1 then
